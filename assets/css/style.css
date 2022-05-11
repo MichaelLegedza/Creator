@@ -1,0 +1,62 @@
+/******************************* COMMON
+***************************************/
+*,
+:before,
+:after {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    box-sizing: border-box
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+
+/* --------------- Wrapper ---------------- */
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+/* -----------------------Fonts ----------------------*/
+@font-face {
+	font-family: 'Gilroy';
+	font-display: swap;
+	src: url("../assets/fonts/Gilroy-Semibold.woff");
+	src: local("O"), url("../assets/fonts/Gilroy-Semibold.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rubik:wght@500&display=swap');
