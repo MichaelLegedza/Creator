@@ -24,27 +24,10 @@ img {
 }
 
 body {
+  font-family: 'Gilroy', sans-serif;
   height: 100%;
   line-height: 1;
-}
-
-
-/* --------------- Wrapper ---------------- */
-
-.wrapper {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-[class*="__container"] {
-  max-width: 1100px;
-  margin: 0px auto;
-}
-
-.main {
-  flex: 1 1 auto;
+  background: linear-gradient(45deg, rgb(4, 13, 62), rgb(59, 29, 96));
 }
 
 /* -----------------------Fonts ----------------------*/
@@ -60,3 +43,106 @@ body {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Rubik:wght@500&display=swap');
+
+/* --------------- Wrapper ---------------- */
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* -------------------------------------------- */
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 1130px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+
+/* ---------- header ---------- */
+
+.header__container {
+  display: flex;
+  min-height: 198px;
+  align-items: center;
+}
+
+.header__menu {
+  flex: 1 1 auto;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  margin-left: 44px;
+  gap: 44px;
+}
+
+.menu__link,
+.button {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.menu__link {
+  color: #B5B5B5;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  font-family: 'Rubik';
+  padding: 8px 28px;
+  border-radius: 5px;
+}
+
+.button-base {
+  color: #F2994A;
+  border: 1px solid #F2994A;
+}
+
+.button-orange {
+  color: #FFFFFF;
+  background-color: #F2994A;
+  box-shadow: -5px 15px 40px -10px #f2995e;
+}
+
+
+/* --------- PC ------------- */
+@media (max-width: 1200px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+/* --------- TABLET ------------- */
+@media (max-width: 992px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+
+  .menu__list {
+    margin-left: 25px;
+    gap: 30px;
+  }
+
+  .menu__link {
+    font-size: 11px;
+  }
+}
+
+
+/* --------- MOBILE ------------- */
