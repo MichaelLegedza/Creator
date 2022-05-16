@@ -115,6 +115,7 @@ body {
   width: 157px;
   height: 46px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .button-base {
@@ -148,7 +149,7 @@ body {
   }
 
   .menu__list {
-    margin-left: 25px;
+    margin: 0px 25px;
     gap: 30px;
   }
 
@@ -244,4 +245,120 @@ body {
   height: 2px;
   top: 8px;
   transition: .2s linear;
+}
+
+
+/* ---- Reasons block ------ */
+
+.reasons__container {
+  display: flex;
+  gap: 30px;
+}
+
+.reasons__content {
+  min-width: 540px;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 50px;
+  color: #99EFD0;
+  margin-bottom: 20px;
+}
+
+.reasons__content p {
+  max-width: 400px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Inter';
+  color: #8476AA;
+}
+
+
+
+
+.reasons__buttons {
+  margin-bottom: 60px;
+}
+
+
+
+
+.reasons__video img {
+  cursor: pointer;
+}
+
+.reasons__video,
+.video__preview {
+  display: flex;
+}
+
+.video__preview {
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.video__preview p {
+  max-width: 315px;
+  font-size: 16px;
+  margin: 0;
+}
+
+.video__preview a {
+  width: fit-content;
+  font-size: 14px;
+  color: #6D6D78;
+  transition: .1s linear;
+}
+
+.video__preview a:hover {
+  text-decoration: underline;
+  color: #F2994A;
+  transition: .1s linear;
+}
+
+
+/* --------- PC ------------- */
+@media (max-width: 1199.5px) {
+  
+}
+
+/* --------- TABLET ------------- */
+@media (max-width: 991.5px) {
+  .reasons__content {
+    min-width: 425px;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .reasons__video img {
+    height: 75%;
+  }
+}
+
+
+/* --------- MOBILE ------------- */
+
+@media (max-width: 767.5px) {
+  .reasons__container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .reasons__content p {
+    font-size: 16px;
+  }
+
+  .video__preview p {
+    font-size: 14px;
+  }
 }
