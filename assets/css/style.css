@@ -156,6 +156,10 @@ body {
   .menu__link {
     font-size: 11px;
   }
+
+  header .button {
+    width: 120px;
+  }
 }
 
 
@@ -193,14 +197,17 @@ body {
     transition: .2s linear;
   }
   .menu__list.active {
-    top: 175px;
-    gap: 40px;
-    opacity: 1;
+    top: 115px;
+    background-color: #000000;
+    opacity: 0.95;
     transition: .2s linear;
   }
 
   .menu__link {
+    display: block;
     font-size: 16px;
+    color: #F2994A;
+    padding: 20px 0px;
   }
 }
 
@@ -361,4 +368,31 @@ h1 {
   .video__preview p {
     font-size: 14px;
   }
+}
+
+
+
+/* ------------------ CUSTOMERS ------------------- */ 
+
+.customers {
+  padding-bottom: 100px;
+}
+
+.customers__container {
+  max-width: 970px;
+}
+
+.customers__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers__list img {
+  opacity: 0.3;
+  transition: .1s linear;
+}
+
+.customers__list img:hover {
+  opacity: 1;
+  transition: .1s linear;
 }
