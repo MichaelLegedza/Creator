@@ -19,6 +19,19 @@ li {
   list-style: none;
 }
 
+h1,
+h2,
+h3 {
+  color: #99EFD0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Inter';
+  color: #8476AA;
+}
+
 img {
   vertical-align: top;
 }
@@ -198,6 +211,7 @@ body {
   }
   .menu__list.active {
     top: 115px;
+    margin: 0;
     background-color: #000000;
     opacity: 0.95;
     transition: .2s linear;
@@ -269,7 +283,6 @@ body {
 h1 {
   font-size: 44px;
   line-height: 50px;
-  color: #99EFD0;
   margin-bottom: 20px;
 }
 
@@ -370,6 +383,12 @@ h1 {
   }
 }
 
+@media (max-width: 469.5px) {
+  .reasons__content {
+    min-width: unset;
+  }
+}
+
 
 
 /* ------------------ CUSTOMERS ------------------- */ 
@@ -385,6 +404,7 @@ h1 {
 .customers__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .customers__list img {
@@ -395,4 +415,96 @@ h1 {
 .customers__list img:hover {
   opacity: 1;
   transition: .1s linear;
+}
+
+@media (max-width: 649.5px) {
+  .customers__list {
+    justify-content: unset;
+  }
+
+  .customers__list li {
+    width: 50%;
+    padding: 25px;
+    text-align: center;
+  }
+}
+
+/* -------------- Your Choice --------------- */
+
+.your-choice {
+  padding-bottom: 25px;
+}
+
+.your-choice-chapter {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.your-choice__subtitle {
+  margin-bottom: 15px;
+  font-size: 42px;
+  line-height: 50px;
+}
+
+.your-choice-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 35px 50px;
+}
+
+.features__block {
+  width: 300px;
+}
+
+.features__block h3 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+} 
+
+.features__block h3::before {
+  content: url(../img/feature-1.svg);
+  display: inline-block;
+  margin-right: 28px;
+}
+
+.features__block-2 h3::before {
+  content: url(../img/feature-2.svg);
+}
+
+.features__block-3 h3::before {
+  content: url(../img/feature-3.svg);
+}
+
+.features__block-4 h3::before {
+  content: url(../img/feature-4.svg);
+}
+
+.features__block-5 h3::before {
+  content: url(../img/feature-5.svg);
+}
+
+.features__block-6 h3::before {
+  content: url(../img/feature-6.svg);
+}
+
+.features__block p {
+  font-size: 14px;
+}
+
+
+@media (max-width: 767.5px) {
+  .your-choice-features {
+    display: flex;
+    flex-direction: column;
+    gap: 35px 15px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1199.5px) {
+  .your-choice-features {
+    grid-template-columns: 1fr 1fr;
+  }
 }
