@@ -32,6 +32,10 @@ p {
   color: #8476AA;
 }
 
+span {
+  color: #F2994A;
+}
+
 img {
   vertical-align: top;
 }
@@ -524,17 +528,13 @@ h1 {
 }
 
 .increase__content {
-  min-width: 400px;
+  max-width: 400px;
 }
 
 .increase__title {
   font-size: 42px;
   line-height: 50px;
   margin-bottom: 30px;
-}
-
-.increase__title span {
-  color: #F2994A;
 }
 
 .increase__description {
@@ -575,3 +575,63 @@ h1 {
   
 }
 
+/* ---------------- Metricks ----------------- */
+
+.metricks {
+  padding: 50px 0px 170px 0px;
+}
+
+.metricks__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2.metricks__title,
+h3.metricks__subtitle {
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.33px;
+}
+
+h2.metricks__title {
+  max-width: 680px;
+  margin-bottom: 30px;
+}
+
+.metricks__description {
+  max-width: 365px;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+
+.metricks__way {
+  display: flex;
+}
+
+.way {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.way.way-1 {
+  width: 195px;
+}
+
+.way.way-2 {
+  width: 275px;
+}
+
+.way.way-3 {
+  width: 190px;
+}
+
+h3.metricks__subtitle {
+  margin-bottom: 15px;
+}
