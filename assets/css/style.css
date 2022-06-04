@@ -617,7 +617,6 @@ h2.metricks__title {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: space-between;
 }
 
 .way.way-1 {
@@ -634,4 +633,44 @@ h2.metricks__title {
 
 h3.metricks__subtitle {
   margin-bottom: 15px;
+}
+
+
+@media (min-width: 767.5px) {
+  .metricks__way {
+    justify-content: space-between;
+    gap: 0px;
+  }
+}
+
+@media (max-width: 575.5px) {
+  h2.metricks__title {
+    font-size: 30px;
+  }
+}
+
+/* -------------- Next-project ---------------- */
+
+.next-project__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 770px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.next-project__title {
+  font-size: 42px;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.next-project button {
+  width: 164px;
+  height: 54px;
+}
+
+.next-project__image {
+  position: absolute;
 }
