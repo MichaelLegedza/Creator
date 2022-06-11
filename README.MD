@@ -4,6 +4,5 @@
 4) (Необходимо дополнить!) Скролл вверх. Улучшение поведения бургера. Небольшие фичи.
 5) Повторное ревью и анализ кода на наличие ошибок и небольших багов.
 
-https://michaellegedza.github.io/Creator/
 [Макет](https://www.figma.com/file/tQfNyzdJ3HSKw0nZnW82Zs/Landing-Page-Concept-For-Data-Processing-Company-?node-id=0%3A1)
 [Демо](https://michaellegedza.github.io/Creator/)
