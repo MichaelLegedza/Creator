@@ -674,3 +674,90 @@ h3.metricks__subtitle {
 .next-project__image {
   position: absolute;
 }
+
+.next-project img {
+  width: 100%;
+}
+
+@media (max-width: 575.5px) {
+  .next-project__title {
+    font-size: 34px;
+  }
+}
+
+
+/* ------------- Invest ------------ */
+
+.increase--invest {
+  padding: 300px 0px 80px;
+}
+
+
+@media (max-width: 575.5px) {
+  .increase__picture img {
+    width: 280px;
+  }
+  .increse__picture .increse__picture--invest img {
+    width: 280px;
+  }
+}
+
+
+/* ----------------- Help ---------------- */
+
+.help {
+  padding-bottom: 150px;
+}
+
+.help__container {
+  display: flex;
+  gap: 85px;
+}
+
+.help__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.help__head {
+  margin-bottom: 50px;
+}
+
+.head__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3.head__title {
+  padding-bottom: 30px;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.32px;
+}
+
+h3.head__title,
+h4.feature__subtitle {
+  color: #99EFD0;
+}
+
+p.head__description,
+h4.feature__subtitle,
+p.feature__description {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.body__feature {
+  max-width: 195px;
+}
+
+h4.feature__subtitle {
+  margin-bottom: 8px;
+}
+
+h4.feature__subtitle::before {
+  content: ;
+}
+
