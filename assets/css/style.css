@@ -377,7 +377,7 @@ h1 {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.2;
   }
 
@@ -390,17 +390,29 @@ h1 {
 /* --------- MOBILE ------------- */
 
 @media (max-width: 767.5px) {
+  .reasons {
+    margin-bottom: 75px;
+  }
   .reasons__container {
     flex-direction: column;
     gap: 50px;
   }
 
-  h1 {
+  h1.reasons__title {
     font-size: 32px;
   }
 
   .reasons__content p {
     font-size: 16px;
+    max-width: unset;
+  }
+
+  .reasons__buttons {
+    justify-content: space-around;
+  }
+
+  .reasons__picture {
+    display: none;
   }
 
   .video__preview p {
@@ -411,6 +423,20 @@ h1 {
 @media (max-width: 469.5px) {
   .reasons__content {
     min-width: unset;
+    text-align: center;
+  }
+  .reasons__video {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reasons__video img {
+    width: 280px;
+    height: 140px;
+    margin-bottom: 15px;
+  }
+  .video__preview {
+    align-items: center;
+    row-gap: 15px;
   }
 }
 
@@ -545,6 +571,34 @@ h1 {
   }
 }
 
+@media (max-width: 576.5px) {
+  .features__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media (min-width: 500px) {
+  .features__block {
+    width: 45%;
+  }
+  .your-choice-features {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 35px;
+  }
+}
+
+@media (min-width: 767.5px) {
+  .features__block {
+    width: 100%;
+  }
+}
+
 
 
 
@@ -579,7 +633,7 @@ h1 {
 @media (max-width: 767.5px) {
 
   .increase {
-    padding: 100px 0px;
+    padding: 35px 0px 80px;
   }
 
   .increase__title {
@@ -693,7 +747,7 @@ h3.metricks__subtitle {
 /* -------------- Next-project ---------------- */
 
 .next-project {
-  padding: 125px 0px;
+  padding: 100px 0px;
   background: url(../img/next-project-background.svg) 50% no-repeat;
 }
 
@@ -718,6 +772,11 @@ h3.metricks__subtitle {
 }
 
 @media (max-width: 575.5px) {
+  
+  .next-project {
+    padding: 50px 0px;
+    background: url(../img/next-project-background.svg) 50% no-repeat;
+  }
   .next-project__title {
     font-size: 34px;
   }
@@ -745,7 +804,7 @@ h3.metricks__subtitle {
 /* ----------------- Help ---------------- */
 
 .help {
-  padding: 100px 0px;
+  padding: 75px 0px;
   background: url(../img/help-background.svg) 100% no-repeat;
 }
 
@@ -834,6 +893,12 @@ h4.feature__subtitle {
     flex-direction: column;
     align-items: center;
   }
+  .help__head {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 50px;
+  }
   .body__feature {
     margin-bottom: 20px;
   }
@@ -909,6 +974,7 @@ input.submit {
   line-height: 20px;
   letter-spacing: 2px;
   transition: .1s linear;
+  cursor: pointer;
 }
 
 input.submit:hover {
@@ -933,6 +999,7 @@ input.submit:hover {
   h3.form__title {
     font-size: 28px;
     margin-bottom: 30px;
+    text-align: center;
   }
 
   p.form__subtitle {
@@ -952,7 +1019,7 @@ input.submit:hover {
   }
 
   input.submit {
-    margin: 0 auto;
+    width: 100%;
     border-radius: 5px;
   }
 
@@ -995,6 +1062,41 @@ input.submit:hover {
   gap: 16px;
 }
 
+.social__link {
+  width: 40px;
+  height: 40px;
+}
+
+.social__link--google {
+  background: url(../img/Google.svg) no-repeat;
+  transition: .1s linear;
+}
+
+.social__link--twitter {
+  background: url(../img/Twitter.svg) no-repeat;
+  transition: .1s linear;
+}
+
+.social__link--facebook {
+  background: url(../img/Facebook.svg) no-repeat;
+  transition: .1s linear;
+}
+
+.social__link--google:hover {
+  background: url(../img/Google-hover.svg) no-repeat;
+  transition: .1s linear;
+}
+
+.social__link--twitter:hover {
+  background: url(../img/Twitter-hover.svg) no-repeat;
+  transition: .1s linear;
+}
+
+.social__link--facebook:hover {
+  background: url(../img/Facebook-hover.svg) no-repeat;
+  transition: .1s linear;
+}
+
 .footer__navigation {
   display: flex;
   justify-content: space-between;
@@ -1034,16 +1136,24 @@ a.column__item:hover {
   gap: 33px;
 }
 
-.footer__copyright div {
+.footer__copyright div,
+.footer__copyright a {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #8D8D8D;
 }
 
+.footer__copyright a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 567.5px) {
   .footer {
     padding: 0px 0px 60px 0px;
+  }
+  .footer__social {
+    gap: 10px;
   }
   .footer__navigation {
     flex-direction: column;
